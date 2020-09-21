@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.demo.nspl.restaurantlite.activity.CurrentPackageActivity">
+
+
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:local="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolColor"
+        android:backgroundTint="@color/toolColor"
+        local:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+        local:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        local:title="Current package detail"
+        local:titleTextColor="@color/white" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_pkg_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolColor"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/txt_PackageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NATHANI SOFTWARE"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/txt_PackageRegisrationOnDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NATHANI SOFTWARE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/txt_PackageExpireOnDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NATHANI SOFTWARE"
+                    android:textColor="@color/hot_red"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/txt_ReferalCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NATHANI SOFTWARE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/txt_TransectionRefrenceNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NATHANI SOFTWARE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/txt_PaymentMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NATHANI SOFTWARE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/tv_paid_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NATHANI SOFTWARE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/tv_pending_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="NATHANI SOFTWARE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/txt_PaymentGateway"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NATHANI SOFTWARE"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/txt_Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹ 0.00"
+                    android:textColor="@color/black"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/txt_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="NO DATA"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="visible" />
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        android:id="@+id/stickyListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1dp"
+        android:visibility="visible">
+    </se.emilsjolander.stickylistheaders.StickyListHeadersListView>
+
+    <!--<View-->
+        <!--android:id="@+id/view_upload"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_below="@+id/lyout_frr"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:background="@color/textcolor" />-->
+
+</LinearLayout>

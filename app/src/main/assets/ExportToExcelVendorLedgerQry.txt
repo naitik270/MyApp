@@ -1,0 +1,19 @@
+SELECT PM.PaymentDate AS Date, 'Receipt No: ' || PM.ReceiptNo AS Details,PaymentMode AS PaymentMode,
+   'PAYMENT : ' || PM.PaymentDetail PaymentDetail,
+   (
+      IFNULL(PM.Amount, 0)
+   )
+   As Amount,'PAYMENT' AS TYPE FROM PaymentMaster PM WHERE PM.[VendorID] = #_vendorID
+
+ UNION ALL
+
+ Select P.PurchaseDate As [Date], 'Purchase No: ' || P.PurchaseNo ||
+   CASE WHEN P.Remark = '' THEN '' ELSE ' Remark : ' || P.Remark END
+    AS Detail , '' As PaymentMode , '' As PaymentDetail ,((IFNULL(PD.GrandTotal,0)) * (-1)) As Amount , 'PURCHASE'
+     AS TYPE From PurchaseMaster P LEFT JOIN PurchaseDetail PD
+       ON PD.PurchaseID = P.PurchaseID WHERE P.[VendorID] = #_vendorID
+
+
+
+
+

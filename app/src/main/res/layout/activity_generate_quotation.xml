@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingStart="6dp"
+            android:paddingEnd="16dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/bt_close"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@android:color/white"
+                    app:srcCompat="@drawable/ic_close"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_Title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="Roboto"
+                        android:gravity="center_vertical"
+                        android:text="Quotation Info"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/txt_title_amt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="Roboto"
+                        android:gravity="center_vertical"
+                        android:text="Amt: "
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:padding="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:padding="2dp"
+                    android:text="DATE INFORMATION"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:text="SELECT DATE"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/txt_select_date"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="7"
+                            android:background="@drawable/cust_edit_text"
+                            android:drawableRight="@drawable/ic_date_range_black_24dp"
+                            android:drawableTint="@color/tint_checkImageView"
+                            android:gravity="center_vertical"
+                            android:hint="dd/MM/yyyy"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="5dp"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:background="@drawable/cust_bill_no"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:text="VALID UP TO"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/txt_valid_date"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_weight="6"
+                                android:background="@drawable/cust_edit_text"
+                                android:drawableEnd="@drawable/ic_date_range_black_24dp"
+                                android:drawableTint="@color/tint_checkImageView"
+                                android:gravity="center_vertical"
+                                android:hint="dd/MM/yyyy"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="5dp"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                            <ImageButton
+                                android:id="@+id/iv_clear"
+                                android:layout_width="0dp"
+                                android:layout_height="35dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:background="@drawable/cust_edit_text"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:src="@drawable/ic_close"
+                                android:tint="@color/colorPrimary" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <HorizontalScrollView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fillViewport="true"
+                                android:measureAllChildren="false"
+                                android:scrollbars="none">
+
+                                <com.google.android.material.button.MaterialButtonToggleGroup
+                                    android:id="@+id/toggleGroup"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:singleSelection="true">
+
+                                    <Button
+                                        android:id="@+id/btn_1day"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:gravity="center"
+                                        android:text="1 DAY"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="12sp" />
+
+                                    <Button
+                                        android:id="@+id/btn_2day"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:gravity="center"
+                                        android:text="2 DAY"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="12sp" />
+
+                                    <Button
+                                        android:id="@+id/btn_1week"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:gravity="center"
+                                        android:text="1 WEEK"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="12sp" />
+
+                                    <Button
+                                        android:id="@+id/btn_2week"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:gravity="center"
+                                        android:text="2 WEEK"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="12sp" />
+
+                                    <Button
+                                        android:id="@+id/btn_15days"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:gravity="center"
+                                        android:text="15 DAYS"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="12sp" />
+
+                                    <Button
+                                        android:id="@+id/btn_30days"
+                                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="40dp"
+                                        android:gravity="center"
+                                        android:text="30 DAYS"
+                                        android:textColor="@color/colorPrimary"
+                                        android:textSize="12sp" />
+
+
+                                </com.google.android.material.button.MaterialButtonToggleGroup>
+
+                            </HorizontalScrollView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lv_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/colorPrimary"
+                        android:padding="2dp"
+                        android:text="CUSTOMER INFORMATION"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+
+                            <EditText
+                                android:id="@+id/edt_mobile_no"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/cust_edit_text"
+                                android:hint="Mobile no."
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:paddingStart="10dp"
+                                android:textColorHint="@color/tint_checkImageView"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/iv_search_contact"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/cust_edit_text"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:src="@drawable/ic_search_call"
+                            android:tint="@color/colorPrimary" />
+
+
+                        <ImageButton
+                            android:id="@+id/iv_call_browse"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/cust_edit_text"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:src="@drawable/ic_people"
+                            android:tint="@color/colorPrimary" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/txt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="VALID UP TO"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txt_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="VALID UP TO"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <EditText
+                            android:id="@+id/edt_customer_name"
+                            android:layout_width="0dp"
+                            android:layout_height="35dp"
+                            android:layout_weight="9"
+                            android:background="@drawable/cust_edit_text"
+                            android:hint="Customer name"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:textColorHint="@color/tint_checkImageView"
+                            android:textSize="14sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <ImageView
+                            android:id="@+id/img_more_details"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_arrow_up" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_cust_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/edt_company_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/cust_edit_text"
+                            android:hint="Company name"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:textColorHint="@color/tint_checkImageView"
+                            android:textSize="14sp"
+                            tools:ignore="RtlSymmetry" />
+
+                        <EditText
+                            android:id="@+id/edt_gst_no"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/cust_edit_text"
+                            android:hint="GST NO."
+                            android:maxLength="15"
+                            android:maxLines="1"
+                            android:paddingStart="10dp"
+                            android:textColorHint="@color/tint_checkImageView"
+                            android:textSize="14sp"
+                            tools:ignore="RtlSymmetry" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_save"
+                        style="@style/Widget.MaterialComponents.Button.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Save"
+                        app:icon="@drawable/ic_btn_add" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

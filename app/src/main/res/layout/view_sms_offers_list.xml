@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    tools:context="com.demo.nspl.restaurantlite.SMS.ActivitySmsValueDetails">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/mandatory_box"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_search_main"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:background="@color/white"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:ems="10"
+                android:focusable="true"
+                android:textAllCaps="true"
+                android:focusableInTouchMode="true"
+                android:hint="SEARCH BY CODE"
+                android:imeOptions="actionSearch"
+                android:inputType="textCapCharacters"
+                android:padding="5dp"
+                android:layout_marginEnd="5dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_clear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ic_close"
+                android:tint="@color/white"
+                android:visibility="visible" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/txt_no_offers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="5dp"
+        android:visibility="gone"
+        android:text="NO OFFER FOUND!"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+</LinearLayout>

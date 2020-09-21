@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://themeandphoto.com/taplivedemos/2014/08/10/invoice/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <style type="text/css">
+        /* =============================================================          GENERAL STYLES        ============================================================ */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        .pad-top-botm {
+            padding-bottom: 8px;
+            padding-top: 8px;
+        }
+
+        .pad-left-right {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        h4 {
+            text-transform: uppercase;
+        }
+        /* =============================================================          PAGE STYLES        ============================================================ */
+
+        .contact-info {
+            font-size: 14px;
+            padding: 0px 10px;
+        }
+
+            .contact-info hr {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+
+        .clien t-info {
+            font-size: 15px;
+        }
+
+        .ttl-amts {
+            text-align: right;
+            padding-right: 15px;
+        }
+
+        .ttr-amts {
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        .tableDesign {
+            background: #F9F9F9;
+        }
+    </style>
+    <title>QUOTATION</title>
+
+     <link rel="stylesheet" type="text/css" href="file:///android_asset/bootstrap.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row pad-top-botm">
+            <div class="col-lg-5 col-md-5 col-sm-5">
+                #quotationceheaderImg
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <strong>#COMPANY_NAME </strong>
+                <br> <i>#BussAddress </i>
+                <br> <i>StateCityPinCode</i>
+            </div>
+        </div>
+        <div class="row text-center contact-info">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h3>QUOTATION</h3>
+            </div>
+        </div>
+        <div class="row text-center contact-info">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-muted">
+                <strong>Email : </strong> EmailValue
+                <strong>Contact : </strong> CompnayMobile
+                <strong>GSTIN : </strong> CompanyGSTNO
+            </div>
+        </div>
+        <div class="row pad-top-botm">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td align="left" valign="top">
+                            <h4>TO</h4>
+                            <strong>#custName</strong>
+                            <br>
+                            <b>Mobile :</b> #custNumber
+
+                  #custCompany
+                  #custGst
+              <!-- #custEmail -->
+                #custAddress
+                        </td>
+                        <td align="left" valign="top">
+                            <h4>Details</h4>
+                            <b>Quotation No :</b> #quotNo
+                            <br>
+                            <b>Date :</b>  #dateValue<br>
+                <b>Valid Upto :</b> #validUpToDateValue
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row pad-left-right">
+            <table class="table table-bordered">
+                <thead class="tableDesign">
+                    <tr>
+                        <th>Sr#</th>
+                        <th>Particulars</th>
+                        <th>Unit</th>
+                        <th class="text-right">Rate</th>
+                        <th class="text-right">Qty.</th>
+                        <th class="text-right">Amount</th>
+                        <th class="text-right">Discount</th>
+                        <th class="text-right">Tax</th>
+                        <th class="text-right">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                          #QuotationBody
+                      </tbody>
+                <tfoot  class="tableDesign">
+                        <tr>
+                            <th colspan="5">TOTAL</th>
+                            <td align="right" valign="middle"><strong>#total_item_amount</strong></th>
+                            <td align="right" valign="middle"><strong>#total_item_discount</strong></th>
+                            <td align="right" valign="middle"><strong>#total_tax</strong></th>
+                            <td align="right" valign="middle"><strong>#total_amount</strong></th>
+                        </tr>
+                    </tfoot>
+            </table>
+        </div>
+        <div class="row pad-left-right">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="ttr-amts">
+                                <h5>#SING_BUSINESSNAME</h5>
+                            </div>
+
+                            <div class="ttr-amts">
+                                #signature
+                            </div>
+
+                        </td>
+                        <td>
+                            <div class="ttl-amts">
+                                <h5>#TotalAmount</h5>
+                            </div>
+
+                            <div class="ttl-amts">
+                                <h5>#Discount</h5>
+                            </div>
+                            <div class="ttl-amts">
+                                <h5>#TotalTaxAmount</h5>
+                            </div>
+
+                            <div class="ttl-amts">
+                                <h4>#GrandTotal</h4>
+                            </div>
+                            <div class="ttl-amts">
+                                <i>amount in words: #AMTINWORD</i>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+          <div class="row text-center contact-info">
+                    <div class="col-lg-12 col-md-12 col-sm-12 text-left">
+                        <i class="text-left">#note</i>
+                    </div>
+                </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+               #Terms
+            </div>
+        </div>
+
+         <div class="row text-center contact-info">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <i>---- thank you ----</i>
+            </div>
+        </div>
+
+        <div class="row text-center contact-info">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <i style="color:red;">#PoweredbyfTouch</i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

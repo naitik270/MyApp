@@ -1,0 +1,23 @@
+Select
+ PM.PaymentDate BillDate
+ , 'Receipt No: ' || PM.ReceiptNo ||
+ CASE WHEN PM.Remark = '' THEN '' ELSE ' Remark : ' || PM.Remark END
+  As Details
+ ,PM.PaymentMode As PaymentMode
+ ,'PAYMENT : ' || PM.PaymentDetail PaymentDetail
+ ,(IFNULL(PM.Amount,0)) As Amount
+ ,'PAYMENT' AS TYPE
+ ,PM.MobileNo
+ From PaymentMaster PM
+ WHERE  PM.MobileNo  = '#_mobile'
+
+ UNION ALL
+
+ Select date(OD.BillDate) AS BillDate , 'Order No: ' || OD.OrderNo Details
+ ,OD.PaymentMode As PaymentMode
+ ,'SALE : ' || OD.PaymentDetail
+ ,((IFNULL(OD.TotalReceiveableAmount,0)) * (-1)) As Amount
+ ,'SALES' AS TYPE
+ ,OD.MobileNo
+ From InventoryOrderMaster OD
+ WHERE  OD.MobileNo  = '#_mobile'

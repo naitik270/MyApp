@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dialog_background"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/lyout_cust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@color/blacktransparent">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:id="@+id/lyout_whatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:background="?attr/selectableItemBackground"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_send_whatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageView7"
+                    android:autoSizePresetSizes="@array/auto_size_text_sizes"
+                    android:autoSizeTextType="uniform"
+                    android:text="SEND BILL TO WHATS'APP"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:targetApi="o" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/white"
+                    card_view:srcCompat="@drawable/ic_whatsapp" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_upload"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lyout_whatsapp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/lyout_sms"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view_upload"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_send_sms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageView8"
+                    android:autoSizePresetSizes="@array/auto_size_text_sizes"
+                    android:autoSizeTextType="uniform"
+                    android:text="SEND BILL TO SMS"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:targetApi="o" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    card_view:srcCompat="@drawable/ic_dialog_sms" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_View_Details"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lyout_sms"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/lyout_View_Details"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view_View_Details"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_View_Details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageView_view_Details"
+                    android:autoSizePresetSizes="@array/auto_size_text_sizes"
+                    android:autoSizeTextType="uniform"
+                    android:text="VIEW DETAILS"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageView_view_Details"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    card_view:srcCompat="@drawable/ic_dialog_details" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_View_Pdf"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lyout_View_Details"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/lyout_Generate_Pdf"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view_View_Pdf"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_Generate_Pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageView_Generate_Pdf"
+                    android:autoSizePresetSizes="@array/auto_size_text_sizes"
+                    android:autoSizeTextType="uniform"
+                    android:text="GENERATE PDF"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:targetApi="o" />
+
+                <ImageView
+                    android:id="@+id/imageView_Generate_Pdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    card_view:srcCompat="@drawable/ic_dialog_pdf" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_Send_Pdf"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lyout_Generate_Pdf"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/ll_send_pdf_wtsApp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view_Send_Pdf"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_Send_Pdf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageView_Send_Pdf"
+                    android:autoSizePresetSizes="@array/auto_size_text_sizes"
+                    android:autoSizeTextType="uniform"
+                    android:text="SEND PDF TO WHATS'APP"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:targetApi="o" />
+
+                <ImageView
+                    android:id="@+id/imageView_Send_Pdf"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    card_view:srcCompat="@drawable/ic_whatsapp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:id="@+id/view_Delete"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ll_send_pdf_wtsApp"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/lyout_Delete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/view_Delete"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_Delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/imageView_Delete"
+                    android:autoSizePresetSizes="@array/auto_size_text_sizes"
+                    android:autoSizeTextType="uniform"
+                    android:text="DELETE ORDER"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:targetApi="o" />
+
+                <ImageView
+                    android:id="@+id/imageView_Delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    card_view:srcCompat="@drawable/ic_dialog_delete" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/vv_delete_payemnt"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/lyout_Delete"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/rl_delete_payment"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/vv_delete_payemnt"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_delete_payment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toRightOf="@+id/iv_delete_payment"
+                    android:autoSizePresetSizes="@array/auto_size_text_sizes"
+                    android:autoSizeTextType="uniform"
+                    android:text="DELETE ORDER WITH PAYMENT"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:targetApi="o" />
+
+                <ImageView
+                    android:id="@+id/iv_delete_payment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    card_view:srcCompat="@drawable/ic_dialog_delete" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_update"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rl_delete_payment"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/layout_update"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/rl_delete_payment"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/txt_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_update"
+                    android:autoSizePresetSizes="@array/auto_size_text_sizes"
+                    android:autoSizeTextType="uniform"
+                    android:text="EDIT ORDER"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:targetApi="o" />
+
+                <ImageView
+                    android:id="@+id/iv_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    card_view:srcCompat="@drawable/ic_upload_doc" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view_summary"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/layout_update"
+                android:background="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/layout_summary"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/layout_update"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:background="?attr/selectableItemBackground">
+
+                <TextView
+                    android:id="@+id/txt_summary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/iv_summary"
+                    android:autoSizePresetSizes="@array/auto_size_text_sizes"
+                    android:autoSizeTextType="uniform"
+                    android:text="SUMMARY"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:targetApi="o" />
+
+                <ImageView
+                    android:id="@+id/iv_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/white"
+                    card_view:srcCompat="@drawable/ic_summary" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

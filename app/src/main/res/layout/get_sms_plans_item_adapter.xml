@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardUseCompatPadding="true">
+
+
+            <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:local="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/toolColor"
+                android:backgroundTint="@color/toolColor"
+                local:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"
+                local:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+                local:title="Add Inventory Stock"
+                local:titleTextColor="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Packages Packages Packages Packages Packages Packages Packages"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="2dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="50dp"
+                                android:orientation="vertical"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:id="@+id/txt_descriptions"
+                                    style="@style/TextAppearance.MaterialComponents.Body1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="DESCRIPTIONS Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam eget ligula eu lectus lobortis condimentum."
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_validity_days"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="VALIDITY IN DAYS: 30"
+                                    android:textColor="#000000"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_productBrochureUrl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Product Url:05/10/2018"
+                                    android:textColor="#000000"
+                                    android:textSize="11sp"
+                                    android:visibility="gone" />
+
+
+                                <TextView
+                                    android:id="@+id/txt_package_type"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="PACKAGE TYPE: FREE"
+                                    android:textColor="#000000"
+                                    android:textSize="11sp" />
+
+
+                                <TextView
+                                    android:id="@+id/txt_transaction_sms_total_credit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="TRANSACTION SMS CREDIT: 1000"
+                                    android:textColor="#000000"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_promotional_sms_total_credit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="PROMOTIONAL SMS CREDIT: 1000"
+                                    android:textColor="#000000"
+                                    android:textSize="11sp" />
+
+
+
+
+                                <TextView
+                                    android:id="@+id/txt_total_sms_credit"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="TOTAL SMS CREDIT: 1000"
+                                    android:textColor="#000000"
+                                    android:textSize="11sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_sms_validity"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="SMS VALIDITY: UNLIMITED"
+                                    android:textColor="#000000"
+                                    android:textSize="11sp" />
+
+
+<!--                                <TextView-->
+<!--                                    android:layout_width="match_parent"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_weight="1"-->
+<!--                                    android:text="PACKAGE VALIDITY"-->
+<!--                                    android:textColor="#000000"-->
+<!--                                    android:textSize="12sp" />-->
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+
+                                   android:orientation="vertical">
+                                   <TextView
+                                       android:id="@+id/txt_package_valid_up_to_date"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:layout_weight="1"
+                                       android:layout_marginTop="3dp"
+                                       android:text="TO DATE: 31/12/2019"
+                                       android:textColor="#000000"
+                                       android:textSize="11sp" />
+
+                                   <TextView
+                                       android:id="@+id/txt_package_valid_up_to_time"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginTop="3dp"
+                                       android:layout_weight="1"
+                                       android:text="TO TIME: 11:45:00 PM"
+                                       android:textColor="#000000"
+                                       android:textSize="11sp" />
+
+                               </LinearLayout>
+
+
+
+                                <TextView
+                                    android:id="@+id/txt_package_price"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="PRICE: Rs 2000/-"
+                                    android:textColor="#000000"
+                                    android:textSize="16sp" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/ckb_accept"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="#CF8D2E"
+                                        android:text="ACCEPT"
+                                        android:scaleX="1.00"
+                                        android:scaleY="1.00"
+                                        android:textColor="#CF8D2E"
+                                        android:textSize="10sp"
+                                        tools:ignore="SmallSp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_terms"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text=" TERMS AND CONDITIONS"
+                                        android:textColor="@color/link_clr"
+                                        android:textSize="10sp"
+                                        tools:ignore="SmallSp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|end"
+                                android:layout_marginTop="-10dp"
+                                app:srcCompat="@drawable/ic_bookmark_24dp" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_done"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="SELECT"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

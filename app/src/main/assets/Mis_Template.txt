@@ -1,0 +1,291 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+	<head>
+		<title>auto generated MIS</title>
+		<meta content="en-us" http-equiv="Content-Language" />
+		<meta content="text/html; charset=utf-16" http-equiv="Content-Type" />
+		<style type="text/css">
+			/* Body style, for the entire document */
+			body {
+            /*background: #F3F3F4;*/
+            background: #F7F7F8;
+            color: #1E1E1F;
+            font-family: 'Segoe UI', 'Segoe UI Semibold','Segoe UI Bold', 'Helvetica Neue Medium',Tahoma, Geneva, Verdana, Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+			}
+
+			/* Header1 style, used for the main title */
+			h1 {
+            padding: 10px 0px 10px 10px;
+            font-size: 21pt;
+            background-color: #E2E2E2;
+            border-bottom: 1px #C1C1C2 solid;
+            color: #201F20;
+            margin: 0;
+            font-weight: normal;
+			}
+
+			/* Header2 style, used for "Overview" and other sections */
+			h2 {
+            font-size: 18pt;
+            font-weight: normal;
+            padding: 15px 0 5px 0;
+            margin: 0;
+			}
+
+			/* Header3 style, used for sub-sections, such as project name */
+			h3 {
+            font-weight: normal;
+            font-size: 15pt;
+            margin: 0;
+            padding: 15px 0 5px 0;
+            background-color: transparent;
+			}
+
+			h4 {
+            font-weight: normal;
+            font-size: 13pt;
+            margin: 0;
+            padding: 15px 0 5px 0;
+            background-color: transparent;
+			}
+
+			/* Color all hyperlinks one color */
+			a {
+            color: #1382CE;
+			}
+
+			/* Table styles */
+			.table {
+            border-spacing: 0 0;
+            border-collapse: collapse;
+            font-size: 10pt;
+			}
+
+            .table thead th {
+			background: #E7E7E8;
+			text-align: left;
+			text-decoration: none;
+			font-weight: normal;
+			padding: 3px 6px 3px 6px;
+            }
+
+            .table td {
+			vertical-align: middle;
+			padding: 3px 6px 5px 5px;
+			margin: 0px;
+			border: 1px solid #E7E7E8;
+			background: #F7F7F8;
+            }
+
+            .table tfoot tr td {
+			background: #E7E7E8;
+			text-decoration: none;
+			font-weight: normal;
+			padding: 3px 6px 3px 6px;
+            }
+
+			.maintd {
+            background: #E7E7E8;
+            text-align: left;
+            vertical-align: middle;
+            text-decoration: none;
+            font-weight: normal;
+            padding: 3px 6px 3px 6px;
+			}
+
+			/* Local link is a style for hyperlinks that link to file:/// content, there are lots so color them as 'normal' text until the user mouse overs */
+			.localLink {
+            color: #1E1E1F;
+            background: #EEEEED;
+            text-decoration: none;
+			}
+
+            .localLink:hover {
+			color: #1382CE;
+			background: #FFFF99;
+			text-decoration: none;
+            }
+
+			/* Center text, used in the over views cells that contain message level counts */
+			.textCentered {
+            text-align: center;
+			}
+
+			/* The message cells in message tables should take up all avaliable space */
+			.messageCell {
+            width: 100%;
+			}
+
+			/* Padding around the content after the h1 */
+			#content {
+            padding: 0px 12px 12px 12px;
+			}
+
+			/* The overview table expands to width, with a max width of 97% */
+			#overview table {
+            width: auto;
+            max-width: 75%;
+			}
+
+			/* The messages tables are always 97% width */
+			#messages table {
+            width: 97%;
+			}
+
+			/* All Icons */
+			.IconSuccessEncoded, .IconInfoEncoded, .IconWarningEncoded, .IconErrorEncoded {
+            min-width: 18px;
+            min-height: 18px;
+            background-repeat: no-repeat;
+            background-position: center;
+			}
+
+			/* Success icon encoded */
+			.IconSuccessEncoded {
+            background-image: url(file.png);
+			}
+
+			/* Information icon encoded */
+			.IconInfoEncoded {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABBElEQVR4Xs2TsYrCQBCG1wVFo3DXWHkHNvZJIdem8AXiA5i8xRXWFvcWiVibF7BIKxamtwmolY2FxsNrnF9GiVkSCGnuh2GL2e9nZvm3IlKK49ihw6YyU62AytM0zU0ClQTYpcNfHv50d3MRi/31hR50asLpNcRXuxoSYJFRxAZPeP29Or3Po1+RJ5iM9eaRMAMmkhv+JDwr8G70ea+kMB3uggEosfNj7BwpJmDAYgI7C/6YblGZJmBhYKYfTF1BFTOmFCX1PwwChKSomAlg4CEcRcWMJ5FtxHPYrReCwYCVDFg//dYRjcwcqFG2no/IH8OgRjgz33g/dWf0cAd3mRGlv/MNZL1xS4xD8eEAAAAASUVORK5CYII=);
+			}
+
+			/* Warning icon encoded */
+			.IconWarningEncoded {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAx0lEQVR4XpWSMQ7CMAxFf4xAyBMLCxMrO8dhaBcuwdCJS3RJBw7SA/QGTCxdWJgiQYWKXJWKIXHIlyw5lqr34tQgEOdcBsCOx5yZK3hCCKdYXneQkh4pEfqzLfu+wVDSyyzFoJjfz9NB+pAF+eizx2Vruts0k15mPgvS6GYvpVtQhB61IB/dk6AF6fS4Ben0uIX5odtFe8Q/eW1KvFeH4e8khT6+gm5B+t3juyDt7n0jpe+CANTd+oTUjN/U3yVaABnSUjFz/gFq44JaVSCXeQAAAABJRU5ErkJggg==);
+			}
+
+			/* Error icon encoded */
+			.IconErrorEncoded {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABP0lEQVR4XqWTvUoDQRSFr4NBWRAD+gA+gMXmDWJlFbC3iCBY2Qm2YmttKyhYaaFtGiPY2CWFD2BjEwiugkv8XecbcmHmEgTJgUs2371ndmY4OyNGZVluedD21TStW19nWZadKrDGFV+915tONdhsVU/LkhSMHjPMqi/sYAx6b3s79Y/Lc/lLc9u7kh0cFR40/G4e3ZhflYf7wVxbzUNZKX8/ORZm8cAdZ/66v8tpYFy67lLJIpYziwev48JGHsRyi3UdVnNgsfDg5fzpZTXz6rt4rhC/0TO9ZBbvrBh9PvRluLGWvPXnpYCFnpWTKWUXiM/Mm6n4TiYGqKvBMefn/0SmwcLriOe8D4fKnlnvBBYLD15NIinMNUjIXFjMNY19n8RGEmUSRkj+HWUeAKy6cNGR2npLrGD0mFEzfOrP+Rf4+xT8EskwMAAAAABJRU5ErkJggg==);
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<div>
+				<h3>Dear sir/madam,</h3>
+				<p>#title</p>
+				<!-- <p>auto generated MIS as on 31 May 01:00:02 PM</p> -->
+			</div>
+			<!--<h3>Calling desposition MIS</h3>-->
+			<!--<a href="#Solution"><span>Solution</span></a>-->
+			<div>
+				<div style="margin-top: 15px !important;">
+					<table>
+					<!--MIS 1 Start-->
+						<tr>
+							<td align="left" valign="top">
+								<h4>#MISTITLE1</h4>
+								#MISSTR1
+							</td>
+						</tr>
+						<tr><td align="left" valign="top"><hr></td></tr>
+					<!--MIS 1 End-->
+
+                    <!--MIS 2 Start-->
+                        <tr>
+                    	    <td align="left" valign="top">
+                    		    <h4>#MISTITLE2</h4>
+                    			#MISSTR2
+                    		</td>
+                    	</tr>
+<tr>
+                        <td align="left" valign="top">
+                            <hr>
+                        </td>
+                    </tr>
+
+					<!--MIS 3 Start-->
+                        <tr>
+                    	    <td align="left" valign="top">
+                    		    <h4>#MISTITLE3</h4>
+                    			#MISSTR3
+                    		</td>
+                    	</tr>
+                    	<tr>
+                                                <td align="left" valign="top">
+                                                    <hr>
+                                                </td>
+                                            </tr>
+                    <!--MIS 4 Start-->
+                    	<tr>
+                             <td align="left" valign="top">
+                               <h4>#MISTITLE4</h4>
+                                   #MISSTR4
+                              </td>
+                         </tr>
+<tr>
+                        <td align="left" valign="top">
+                            <hr>
+                        </td>
+                    </tr>
+                    <!--MIS 5 Start-->
+                    	<tr>
+                             <td align="left" valign="top">
+                               <h4>#MISTITLE5</h4>
+                                   #MISSTR5
+                              </td>
+                         </tr>
+<tr>
+                        <td align="left" valign="top">
+                            <hr>
+                        </td>
+                    </tr>
+                    <!--MIS 6 Start-->
+                    	<tr>
+                             <td align="left" valign="top">
+                               <h4>#MISTITLE6</h4>
+                                   #MISSTR6
+                              </td>
+                         </tr>
+<tr>
+                        <td align="left" valign="top">
+                            <hr>
+                        </td>
+                    </tr>
+                    <!--MIS 7 Start-->
+                        <tr>
+                           <td align="left" valign="top">
+                              <h4>#MISTITLE7</h4>
+                                  #MISSTR7
+                           </td>
+                        </tr>
+<tr>
+                        <td align="left" valign="top">
+                            <hr>
+                        </td>
+                    </tr>
+
+                    <!--MIS 2 End-->
+
+					</table>
+				</div>
+				<div>
+				<table>
+					<tr>
+						<td valign="middle" align="center">
+
+							<img height="38px" width="50px"
+							src="http://www.nathanisoftware.com/images/logo1.png"
+							alt="nathani software logo">
+
+						</td>
+						<td align="center" valign="bottom">
+						  <a href="http://www.nathanisoftware.com/" target="_blank">nathani software pvt. ltd.</a>
+						</td>
+					</tr>
+				</table>
+					<!-- <p> -->
+					<!-- System regarding if any query or suggestion please contact on <a href="mailto:prajapatipravin@gmail.com">rcap@focusbspl.com</a> -->
+					<!-- </p> -->
+					<i class="IconInfoEncoded"></i>
+					<span class="messageCell"><span style="font-size:11px; color:#6c757d!important;">this is an auto generated e-mail. please do not reply. #appVersion</span></span>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

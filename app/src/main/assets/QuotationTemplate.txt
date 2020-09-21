@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)http://themeandphoto.com/taplivedemos/2014/08/10/invoice/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style type="text/css">
+        /* =============================================================
+          GENERAL STYLES
+        ============================================================ */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        .pad-top-botm {
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        h4 {
+            text-transform: uppercase;
+        }
+        /* =============================================================
+          PAGE STYLES
+        ============================================================ */
+
+        .contact-info{
+            font-size: 14px;
+            padding: 0px 10px;
+        }
+
+        .contact-info hr {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .client-info {
+            font-size: 15px;
+        }
+
+        .ttl-amts {
+            text-align: right;
+            padding-right: 50px;
+        }
+
+        .ttr-amts {
+            text-align: left;
+            padding-left: 50px;
+        }
+
+        .tableDesign {
+            background: #F9F9F9;
+        }
+
+    </style>
+    <title>QUOTATION</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+     <!-- <link href="bootstrap.css" rel="stylesheet"> -->
+
+    <link rel="stylesheet" href="file:///android_asset/bootstrap.css"/>
+
+
+    <!-- CUSTOM STYLE  -->
+    <!--<link href="./Free Bootstrap Invoice_files/custom-style.css" rel="stylesheet">-->
+    <!-- GOOGLE FONTS -->
+    <!--<link href="./Free Bootstrap Invoice_files/css" rel="stylesheet" type="text/css">-->
+</head>
+<body>
+    <div class="container">
+        <div class="row pad-top-botm ">
+            <div class="col-lg-5 col-md-5 col-sm-5">
+                <img src="file:///android_asset/logo1.png" style="padding-bottom:10px; width:250px;">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <strong>COMPANY NAME</strong><br>
+                <i>#BussAddress</i><br>
+                <i>StateCityPinCode</i>
+            </div>
+        </div>
+        <div class="row text-center contact-info">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h3>QUOTATION</h3>
+            </div>
+        </div>
+        <div class="row text-center contact-info">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <hr>
+                <div class="col-md-4">
+                    <strong>Email : </strong>  EmailValue
+                </div>
+                <div class="col-md-4">
+                    <strong>Contact : </strong>  CompnayMobile
+                </div>
+                <div class="col-md-4">
+                    <strong>GSTIN : </strong>  CompanyGSTNO
+                </div>
+                <hr />
+            </div>
+        </div>
+        <div class="row pad-top-botm client-info">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h4>
+                    <strong>TO</strong>
+                </h4>
+                <strong>#custName</strong><br>
+                <b>Mobile :</b> #custNumber<br>
+                #custEmail
+                #custAddress
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <h4>
+                    <strong>Details </strong>
+                </h4>
+                <b>Quotation No :</b> #quotNo<br>
+                <b>Date :</b> #dateValue<br>
+                <b>Valid Upto :</b> #validUpToDateValue
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-11 col-md-11 col-sm-11">
+                <table class="table table-bordered table-sm">
+                     <thead class="tableDesign">
+                        <tr>
+                            <th>Sr#</th>
+                            <th>Perticulars</th>
+                            <th>Unit</th>
+                            <th>Rate</th>
+                            <th>Qty.</th>
+                            <th>Amount</th>
+                            <th>Discount</th>
+                            <th>Tax</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                      <tbody>
+                          #QuotationBody
+                      </tbody>
+                    <tfoot  class="tableDesign">
+                        <tr>
+                            <th colspan="5">TOTAL</th>
+                            <th>#total_item_amount</th>
+                            <th>#total_item_discount</th>
+                            <th>#total_tax</th>
+                            <th>#total_amount</th>
+                        </tr>
+                    </tfoot>
+                </table>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+
+                <div class="ttr-amts">
+                    <h6>FOR NATHANISOFTWRAE PVT LTD</h6>
+                </div>
+                <!--<hr>-->
+                <div class="ttr-amts">
+                    <img alt="signature" src="file:///android_asset/sign.png" style="width:100px;" />
+                </div>
+                <!--<hr>-->
+                <div class="ttr-amts">
+                    <h5>
+                        authorised signatory name
+                    </h5>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="ttl-amts">
+                    <h6>#TotalAmount</h6>
+                </div>
+                <!--<hr>-->
+                <div class="ttl-amts">
+                    <h6>#Discount</h6>
+                </div>
+                <div class="ttl-amts">
+                    <h6>#TotalTaxAmount</h6>
+                </div>
+                <!--<hr>-->
+                <div class="ttl-amts">
+                    <h5>
+                        <strong>#GrandTotal</strong>
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-11 col-md-11 col-sm-11">
+                 #Terms
+            </div>
+        </div>
+        <div class="row text-center contact-info">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <i>---- thank you ----</i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

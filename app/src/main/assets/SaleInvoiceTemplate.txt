@@ -1,0 +1,318 @@
+<style type="text/css">
+    .table {
+        border-spacing: 0 0;
+        border-collapse: collapse;
+        font-size: 10pt;
+        font-family: 'Segoe UI', 'Segoe UI Semibold','Segoe UI Bold', 'Helvetica Neue Medium',Tahoma, Geneva, Verdana, Arial, sans-serif;
+    }
+
+        .table thead th {
+            background: #808080;
+            color: white;
+            text-align: left;
+            text-decoration: none;
+            font-weight: normal;
+            padding: 3px 6px 3px 6px;
+            border: solid 1px #dcdcdc;
+            white-space: nowrap;
+        }
+
+        .table td {
+            vertical-align: left;
+            padding: 3px 6px 5px 5px;
+            margin: 0px;
+            border: 1px solid #E7E7E8;
+            background: #F7F7F8;
+            /*white-space: nowrap;*/
+        }
+
+        .table tfoot tr td {
+            background: #808080;
+            color: white;
+            text-decoration: none;
+            font-weight: normal;
+            padding: 3px 6px 3px 6px;
+        }
+
+    .tableMain {
+        /*border-left: solid 1px #F7F7F8;        border-top: solid 1px #F7F7F8;        border-right: solid 1px #F7F7F8;        border-bottom: none;*/ font-size: 10pt;
+        font-family: 'Segoe UI', 'Segoe UI Semibold','Segoe UI Bold', 'Helvetica Neue Medium',Tahoma, Geneva, Verdana, Arial, sans-serif;
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+        .tableMain thead th {
+            text-align: left;
+            text-decoration: none;
+            font-weight: normal;
+            padding: 3px 6px 3px 6px;
+            border: none;
+            width: 100%;
+            white-space: nowrap;
+        }
+
+        .tableMain td {
+            vertical-align: middle;
+            text-align: left;
+            padding: 2px 2px 2px 2px;
+            margin: 0px;
+            border: none;
+        }
+
+        .tableMain tfoot tr td {
+            text-decoration: none;
+            font-weight: normal;
+            padding: 3px 6px 3px 6px;
+        }
+
+    .left {
+        text-align: left;
+        white-space: nowrap;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .addressClass {
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    .amtWord {
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        font-size: 10px;
+        text-align: justify;
+    }
+
+    .simpleTable {
+        border: solid 1px #F7F7F8; /*border-top: solid 1px #F7F7F8;        border-right: solid 1px #F7F7F8;        border-bottom: none;*/
+        width: 100%;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-spacing: 0 0;
+        border-collapse: collapse;
+        font-size: 10pt;
+        font-family: 'Segoe UI', 'Segoe UI Semibold','Segoe UI Bold', 'Helvetica Neue Medium',Tahoma, Geneva, Verdana, Arial, sans-serif;
+    }
+</style>
+<table class="simpleTable">
+    <tr>
+        <td align="center" valign="top">
+            <table class="tableMain">
+                <tr>
+                    #invoiceheader
+                    <td align="right" valign="middle" style="background-color:#808080; color:white;">
+                        <h1>#INVOICE_TITLE</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">
+                        <table style="background-color:white;border:none;" border="0">
+                            <tr>
+                                <td>
+                                    <p class="addressClass">
+                                        SHOP_ADDRESS
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="addressClass">
+                                        CITY_PINCODE
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left" valign="top">
+                                    <p class="addressClass">
+                                        CONTACT_EMAIL,
+                                        CONTACT_PERSON_NAME,
+                                        CONTACT_PERSON_CONTACT
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p class="addressClass">#CompanyGST</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td align="right" valign="top">
+                        <table style="background-color:white;border:none;" border="0">
+                            <tr>
+                                <td class="right">BILL NO.:</td>
+                                <td class="left">invoice_no</td>
+                            </tr>
+                            <tr>
+                                <td class="right">PRINT:</td>
+                                <td class="left">print_value</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" valign="top" align="left">
+                        <table style="border:none;width:100%;" border="0" width="100%">
+                            <tr>
+                                <td align="left" valign="top" style="background-color:#f2f2f2;">
+                                    <table style="border:none;" border="0">
+                                        <tr>
+                                            <td align="left"><span style="font-weight:600;">Mobile</span></td>
+
+                                            <td align="left">customerMobileNumber</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left">  <span style="font-weight:600;">Name</span></td>
+
+                                            <td align="left">CUSTOMER_NAME</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td align="left" valign="top" style="background-color:#f2f2f2;">
+                                    <table style="border:none;" border="0">
+
+                                        <tr>
+                                            <td align="left">  <span style="font-weight:600;">Compnay</span></td>
+                                            <td align="left">CUST_COMPANY_GST</td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left"><span style="font-weight:600;">Address</span></td>
+                                            <td align="left" valign="top">cust_address_value</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td align="left" valign="top">
+            <table class="simpleTable">
+                <tr>
+                    <td colspan="2" valign="top" align="center">
+                        <table class="table"
+                               style="border:none;width:100%;"
+                               border="0">
+                             <thead>
+                                     <tr>
+                                         <th align="center">SR#</th>
+                                          <th align="left">ITEM CODE</th>
+                                          <th align="left">ITEM</th>
+                                          <th align="left">DETAILS</th>
+                                          <th align="left">UNIT</th>
+                                          <th align="right">RATE</th>
+                                          <th align="right">QTY.</th>
+                                          <th align="right">AMOUNT</th>
+                                          <!--<th align="right">DISCOUNT %</th>
+                                          <th align="right">DISCOUNT AMOUNT</th>-->
+                                          <th align="right">DISCOUNT</th>
+                                          <th align="right">TAX</th>
+                                          <th align="right">TOTAL</th>
+                                      </tr>
+                                  </thead>
+                            <tbody>
+                                #invoiceBody
+                            </tbody>
+                            <tfoot>
+                                     <tr>
+                                        <td align="right" valign="middel" colspan="7">TOTAL</td>
+                                        <td align="right" valign="middle">total_item_amount</td>
+                                        <td align="right" valign="middle">Total_item_discount</td>
+                                        <td align="right" valign="middle">Total_Tax</td>
+                                        <td align="right" valign="middle">Total_Amount</td>
+                                    </tr>
+                                </tfoot>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">
+                        <table class="table" style="border:none;width:100%;" border="0" width="100%">
+                            <tbody>
+                                #signature
+                            </tbody>
+                        </table>
+                    </td>
+                    <td align="right" valign="top">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td align="right" valign="middle" colspan="3">
+                                        TOTAL AMOUNT
+                                    </td>
+                                    <td align="right" valign="middle">
+                                        _totalAmount
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" valign="middle" colspan="3">
+                                       DISCOUNT
+                                    </td>
+                                    <td align="right" valign="middle">
+                                        _discountAmount
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" valign="middle" colspan="3">
+                                        GRAND TOTAL
+                                    </td>
+                                    <td align="right" valign="middle">
+                                        _paidAmt
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td align="right" valign="middle" colspan="3">
+                                        RECEIVED AMOUNT
+                                    </td>
+                                    <td align="right" valign="middle">
+                                        Received_Amt
+                                    </td>
+                                </tr>
+
+                                     #adjustment_amt
+                                     #pending_Amt
+
+                                <tr>
+                                    <td align="right" valign="middle" colspan="3">
+                                        PAYMENT MODE:
+                                    </td>
+                                    <td align="right" valign="middle">
+                                        _mode
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right" valign="middle">
+                        AMOUNT IN WORD:  _word_payment
+                    </td>
+                </tr>
+                #note
+                #Terms
+                <tr>
+                    <td colspan="2" align="center" valign="middle">
+                        ----- THANK YOU -----
+                    </td>
+                </tr>
+                 <tr>
+                    <td colspan="2" align="center" valign="middle">
+                        #PoweredbyfTouch
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>

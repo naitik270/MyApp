@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lyout_bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            style="@style/reportsCardStyle"
+                            app:cardCornerRadius="16dp">
+
+                            <LinearLayout
+                                android:id="@+id/cv_sale"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/card_sale"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_sale"
+                                    android:tint="@color/dark_green" />
+
+                                <TextView
+                                    android:id="@+id/txt_sale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="8dp"
+                                    android:text="BULK SMS"
+                                    android:textColor="@color/dark_green"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            style="@style/reportsCardStyle"
+                            app:cardCornerRadius="16dp">
+
+                            <LinearLayout
+                                android:id="@+id/cv_wholesale"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/card_wholesale"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_wholesale"
+                                    android:tint="@color/viewDialogTxt" />
+
+                                <TextView
+                                    android:id="@+id/txt_wholesale_invoice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="8dp"
+                                    android:text="WHOLESALE"
+                                    android:textColor="@color/viewDialogTxt"
+                                    android:textSize="20sp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+
+                        <androidx.cardview.widget.CardView
+                            style="@style/reportsCardStyle"
+                            app:cardCornerRadius="16dp">
+
+                            <LinearLayout
+                                android:id="@+id/ll_quotation"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/card_quotation"
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_log"
+                                    android:tint="@color/purple" />
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="8dp"
+                                    android:text="LOG"
+                                    android:textColor="@color/purple"
+                                    android:textSize="20sp" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            style="@style/reportsCardStyle"
+                            app:cardCornerRadius="16dp">
+
+
+                            <LinearLayout
+                                android:id="@+id/cv_balance"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:background="@drawable/card_quotation"
+                                android:clickable="true"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/purple"
+                                    android:clickable="true"
+                                    android:orientation="horizontal">
+
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:src="@drawable/ic_balance"
+                                        android:tint="@color/white" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_marginStart="5dp"
+                                        android:gravity="center"
+                                        android:text="BALANCE"
+                                        android:textColor="@color/white"
+                                        android:textSize="18sp" />
+                                </LinearLayout>
+
+                                <ProgressBar
+                                    android:id="@+id/pb_check_result"
+                                    style="?android:attr/progressBarStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical|center_horizontal" />
+
+                                <TextView
+                                    android:id="@+id/txt_no_data_check"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="2dp"
+                                    android:gravity="center"
+                                    android:text="NO DATA"
+                                    android:textColor="@color/purple"
+                                    android:textSize="16sp" />
+
+                                <LinearLayout
+                                    android:id="@+id/ll_data"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_transactional"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="3dp"
+                                        android:layout_marginTop="5dp"
+                                        android:text="TRANSACTIONAL"
+                                        android:textColor="@color/purple"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_promotional"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="3dp"
+                                        android:text="PROMOTIONAL"
+                                        android:textColor="@color/purple"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:id="@+id/txt_total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="3dp"
+                                        android:text="TOTAL"
+                                        android:textColor="@color/purple"
+                                        android:textSize="13sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/lyout_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <include layout="@layout/content_sms_offer_pager" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

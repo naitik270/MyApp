@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+
+    <cache-path
+        name="cache"
+        path="." />
+
+    <external-cache-path
+        name="external_cache"
+        path="." />
+
+    <external-files-path
+        name="external_files"
+        path="." />
+
+    <external-path
+        name="QuotationPDF"
+        path="QuotationPDF/" />
+
+    <external-path
+        name="fTouchPOS"
+        path="fTouchPOS/" />
+
+    <external-path
+        name="fTouchPOSDocument"
+        path="fTouchPOSDocument/" />
+
+    <external-path
+        name="fTouchPOSDemoDoc"
+        path="fTouchPOSDemoDoc/" />
+
+
+    <external-path
+        name="external"
+        path="." />
+
+    <external-path
+        name="external_files"
+        path="." />
+
+    <external-path
+        name="fTouchPOSDemo"
+        path="fTouchPOSDemo/" />
+
+    <external-path
+        name="ItemImage"
+        path="./" />
+
+    <files-path
+        name="files"
+        path="." />
+
+    <files-path
+        name="EmployeeDocument"
+        path="." />
+
+    <external-path
+        name="EmployeeDocument"
+        path="." />
+
+    <external-files-path
+        name="EmployeeDocument"
+        path="." />
+</paths>

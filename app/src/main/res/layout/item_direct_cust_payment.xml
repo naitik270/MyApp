@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/pagename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="LAST LINE"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:text="LAST LINE"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/pageid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LAST LINE"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/pagelink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LAST LINE"
+        android:visibility="gone" />
+
+
+    <View
+        android:id="@+id/view_upload"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/product_details" />
+
+</LinearLayout>

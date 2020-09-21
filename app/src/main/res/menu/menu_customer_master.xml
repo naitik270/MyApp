@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_white"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|always" />
+
+    <item
+        android:id="@+id/itm_excel"
+        android:icon="@drawable/excel"
+        android:title="EXPORT TO EXCEL"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/itm_pdf"
+        android:icon="@drawable/pdf"
+        android:title="Pdf"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/itm_import_customer"
+        android:icon="@drawable/ic_btn_add"
+        android:title="IMPORT CUSTOMER"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/itm_import_contact"
+        android:icon="@drawable/ic_btn_add"
+        android:title="IMPORT PHONEBOOK"
+        app:showAsAction="never" />
+
+
+</menu>

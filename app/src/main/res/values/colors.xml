@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0c7686</color>
+    <color name="gray">#6c0c7686</color>
+    <color name="colorPrimaryDark">#0098ac</color>
+    <color name="colorAccent">#0291a4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_trans">#BAE2DEDE</color>
+    <color name="trans">#00000000 </color>
+    <color name="blacktrans">#54000000</color>
+
+    <color name="title">#222222</color>
+    <color name="textcolor">#808080</color>
+    <color name="pressed_bg">#64b7b7b7</color>
+
+    <color name="red_300">#E57373</color>
+    <color name="blacktransparent">#65000000</color>
+    <color name="dialog_background">#9A35A1B8</color>
+    <color name="dialog_background_delete_payment">#9A3092A8</color>
+    <color name="red">#FFFA2752</color>
+    <color name="red_dark">#bf1d3e</color>
+    <color name="blue">#376AE0</color>
+    <color name="viewblue">#ADCCE2</color>
+    <color name="unitcolor">#FFBEC4C4</color>
+    <color name="green">#3bb61f</color>
+    <color name="purple">#8E1F68</color>
+    <color name="darknavy">#011A27</color>
+    <color name="blueberry">#063852</color>
+    <color name="lightgray">#FFE0E9E9</color>
+    <color name="black">#000000</color>
+    <color name="tint_checkImageView">#808080</color>
+    <color name="Txt_list_Colour">#585858</color>
+    <color name="product_details">#56585858</color>
+    <color name="recent_bg">#e6e6e6</color>
+
+    <color name="skyBlue">#03A9F4</color>
+
+
+    <color name="link_clr">#007bff</color>
+    <color name="ckb_invoice">#0042A0</color>
+
+    <color name="grey_80">#37474F</color>
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_40">#D1D0D0</color>
+    <color name="grey_90">#263238</color>
+
+    <color name="uper_filter">#345164</color>
+
+
+    <color name="toolColor">#09535e</color>
+    <color name="das">#C909535E</color>
+
+    <color name="viewDialogTxt">#B6861B</color>
+    <color name="premium">#F0AC00</color>
+    <color name="orange">#FF4500</color>
+    <color name="yellow">#B47A00</color>
+    <color name="yellow_new">#FFFF00</color>
+    <color name="checkBox">#484E00</color>
+    <color name="green_card">#40932d</color>
+
+    <color name="viewBg">#F7F7F7</color>
+    <color name="album_title">#4c4c4c</color>
+    <color name="qty_block_clr">#DFDFDF</color>
+    <color name="tab_list">#dfdfdf</color>
+    <color name="hot_red">#C02828</color>
+    <color name="light_hot_red">#26C02828</color>
+    <color name="dark_green">#225A25</color>
+    <color name="light_dark_green">#27225A25</color>
+    <color name="icon_color">#ED665C</color>
+
+
+    <color name="light_gray">#6A6A6A</color>
+    <color name="dark_gray">#252525</color>
+
+    <color name="scanner_line">#00ceff</color>
+
+
+    <color name="violet">#601B8F</color>
+    <color name="light_green_400">#9CCC65</color>
+
+
+
+    <item name="blue1" type="color">#FF33B5E5</item>
+    <item name="purple1" type="color">#FFAA66CC</item>
+    <item name="green1" type="color">#FF99CC00</item>
+    <item name="orange1" type="color">#FFFFBB33</item>
+    <item name="red1" type="color">#FFFF4444</item>
+    <item name="darkblue" type="color">#FF0099CC</item>
+    <item name="darkpurple" type="color">#FF9933CC</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+    <item name="darkorange" type="color">#FFFF8800</item>
+    <item name="darkred" type="color">#FFCC0000</item>
+
+    <integer-array name="androidcolors">
+        <item>@color/blue1</item>
+        <item>@color/purple1</item>
+        <item>@color/green1</item>
+        <item>@color/orange1</item>
+        <item>@color/red1</item>
+        <item>@color/darkblue</item>
+        <item>@color/darkpurple</item>
+        <item>@color/darkgreen</item>
+        <item>@color/darkorange</item>
+        <item>@color/darkred</item>
+    </integer-array>
+
+
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_type_options">
+        <item>@string/none_type</item>
+        <item>@string/purchase_type</item>
+        <item>@string/sales_type</item>
+        <item>@string/offer_type</item>
+        <item>@string/quotation_type</item>
+    </string-array>
+
+
+    <string-array name="array_default_options">
+        <item>@string/No_default</item>
+        <item>@string/yes_default</item>
+    </string-array>
+
+
+    <string-array name="array_amount_filter">
+        <item>@string/none</item>
+        <item>@string/LessThan</item>
+        <item>@string/GreaterThan</item>
+        <item>@string/LessThanEqualTo</item>
+        <item>@string/GreaterThanEqualTo</item>
+
+    </string-array>
+
+</resources>

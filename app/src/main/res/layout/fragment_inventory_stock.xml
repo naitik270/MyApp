@@ -1,0 +1,202 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_out"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="140dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:src="@drawable/ic_minis"
+        android:tint="@color/white"
+        android:visibility="invisible"
+        app:backgroundTint="@color/red_dark"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_in"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:src="@drawable/ic_add_new"
+        android:tint="@color/white"
+        android:visibility="invisible"
+        app:backgroundTint="@color/green"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+    <TextView
+        android:id="@+id/empty_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="5dp"
+        android:visibility="invisible"
+        android:text="No Category Found!"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/fab_manage"
+        app:backgroundTint="@color/blueberry"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blueberry"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+
+                        android:padding="5dp"
+                        android:text="Recent entries"
+                        android:textColor="@color/white"
+                        android:textSize="17dp" />
+
+
+                    <TextView
+                        android:id="@+id/previous_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:textColor="@color/white"
+                        android:padding="3dp"
+                        android:text="dsdsdsd"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/current_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:padding="3dp"
+                        android:textColor="@color/white"
+                        android:text="dsdsdsd"
+
+
+                        />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_recent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/stock_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blueberry"
+                        android:padding="5dp"
+                        android:text="Stock"
+                        android:textColor="@color/white"
+                        android:textSize="17dp"
+
+                        />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/list_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/lyout1">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_stock_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:scrollbars="vertical" />
+
+                    <TextView
+                        android:id="@+id/txt_nodata"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="NO DATA"
+
+                        android:textSize="18dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
